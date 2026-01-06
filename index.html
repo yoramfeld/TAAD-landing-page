@@ -282,16 +282,12 @@
                         <label for="license1">רכב</label>
                     </div>
                     <div class="checkbox-option">
-                        <input type="checkbox" id="license2" name="drivers_license" value="אופנוע">
-                        <label for="license2">אופנוע</label>
+                        <input type="checkbox" id="license2" name="drivers_license" value="משאית">
+                        <label for="license2">משאית</label>
                     </div>
                     <div class="checkbox-option">
-                        <input type="checkbox" id="license3" name="drivers_license" value="אוטובוס">
-                        <label for="license3">אוטובוס</label>
-                    </div>
-                    <div class="checkbox-option">
-                        <input type="checkbox" id="license4" name="drivers_license" value="משאית">
-                        <label for="license4">משאית</label>
+                        <input type="checkbox" id="license3" name="drivers_license" value="אופנוע">
+                        <label for="license3">אופנוע</label>
                     </div>
                 </div>
             </div>
@@ -301,12 +297,12 @@
                 <label>רקע פלילי <span class="required">*</span></label>
                 <div class="radio-group">
                     <div class="radio-option">
-                        <input type="radio" id="criminal1" name="criminal_record" value="אין רקע פלילי" required>
-                        <label for="criminal1">אין רקע פלילי</label>
+                        <input type="radio" id="criminal1" name="criminal_record" value="אין" required>
+                        <label for="criminal1">אין</label>
                     </div>
                     <div class="radio-option">
-                        <input type="radio" id="criminal2" name="criminal_record" value="יש רקע פלילי">
-                        <label for="criminal2">יש רקע פלילי</label>
+                        <input type="radio" id="criminal2" name="criminal_record" value="יש">
+                        <label for="criminal2">יש</label>
                     </div>
                 </div>
             </div>
@@ -382,7 +378,7 @@
 
             <!-- Text Area Questions -->
             <div class="form-group">
-                <label for="motivation">למה אתה רוצה להצטרף למשטרה? <span class="required">*</span></label>
+                <label for="motivation">למה אתה רוצה להצטרף לכיתת הכוננות? <span class="required">*</span></label>
                 <textarea id="motivation" name="motivation" required></textarea>
             </div>
 
@@ -394,6 +390,16 @@
             <div class="form-group">
                 <label for="additional">פרטים נוספים</label>
                 <textarea id="additional" name="additional"></textarea>
+            </div>
+
+            <!-- Confirmation Checkbox -->
+            <div class="form-group">
+                <div style="display: flex; align-items: center;">
+                    <input type="checkbox" id="confirmation" name="confirmation" value="מאושר" required style="margin-left: 10px; width: 18px; height: 18px; cursor: pointer;">
+                    <label for="confirmation" style="margin: 0; cursor: pointer; font-weight: 600;">
+                        אני מאשר שהפרטים שמסרתי נכונים. <span class="required">*</span>
+                    </label>
+                </div>
             </div>
 
             <button type="submit" id="submitBtn">שלח טופס</button>
