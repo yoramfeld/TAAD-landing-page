@@ -232,88 +232,167 @@
             <!-- Questions Section -->
             <div class="section-title">שאלות</div>
 
-            <!-- Question 1 - Radio -->
+            <!-- Question 1 - Age -->
             <div class="form-group">
-                <label>מה רמת הניסיון שלך? <span class="required">*</span></label>
+                <label>גיל <span class="required">*</span></label>
                 <div class="radio-group">
                     <div class="radio-option">
-                        <input type="radio" id="exp1" name="experience" value="מתחיל" required>
-                        <label for="exp1">מתחיל</label>
+                        <input type="radio" id="age1" name="age" value="21-30" required>
+                        <label for="age1">21-30</label>
                     </div>
                     <div class="radio-option">
-                        <input type="radio" id="exp2" name="experience" value="בינוני">
-                        <label for="exp2">בינוני</label>
+                        <input type="radio" id="age2" name="age" value="31-40">
+                        <label for="age2">31-40</label>
                     </div>
                     <div class="radio-option">
-                        <input type="radio" id="exp3" name="experience" value="מתקדם">
-                        <label for="exp3">מתקדם</label>
+                        <input type="radio" id="age3" name="age" value="41-50">
+                        <label for="age3">41-50</label>
                     </div>
                     <div class="radio-option">
-                        <input type="radio" id="exp4" name="experience" value="מומחה">
-                        <label for="exp4">מומחה</label>
+                        <input type="radio" id="age4" name="age" value="+50">
+                        <label for="age4">+50</label>
                     </div>
                 </div>
             </div>
 
-            <!-- Question 2 - Checkboxes -->
+            <!-- Question 2 - Military Service -->
             <div class="form-group">
-                <label>באילו תחומים אתה מעוניין? (ניתן לבחור יותר מאחד)</label>
+                <label for="military_service">שירות צבאי <span class="required">*</span></label>
+                <input type="text" id="military_service" name="military_service" required>
+            </div>
+
+            <!-- Question 3 - Military Rank -->
+            <div class="form-group">
+                <label for="military_rank">דרגה צבאית</label>
+                <input type="text" id="military_rank" name="military_rank" placeholder="לדוגמה: סמל, סמ&quot;ר, נגד, קצין">
+            </div>
+
+            <!-- Question 4 - Military Role -->
+            <div class="form-group">
+                <label for="military_role">תפקיד בצבא</label>
+                <textarea id="military_role" name="military_role" placeholder="תאר בכלליות את תפקידך בצבא"></textarea>
+            </div>
+
+            <!-- Question 5 - Driver's License -->
+            <div class="form-group">
+                <label>רישיון נהיגה</label>
                 <div class="checkbox-group">
                     <div class="checkbox-option">
-                        <input type="checkbox" id="interest1" name="interests" value="פיתוח">
-                        <label for="interest1">פיתוח</label>
+                        <input type="checkbox" id="license1" name="drivers_license" value="רכב">
+                        <label for="license1">רכב</label>
                     </div>
                     <div class="checkbox-option">
-                        <input type="checkbox" id="interest2" name="interests" value="עיצוב">
-                        <label for="interest2">עיצוב</label>
+                        <input type="checkbox" id="license2" name="drivers_license" value="אופנוע">
+                        <label for="license2">אופנוע</label>
                     </div>
                     <div class="checkbox-option">
-                        <input type="checkbox" id="interest3" name="interests" value="שיווק">
-                        <label for="interest3">שיווק</label>
+                        <input type="checkbox" id="license3" name="drivers_license" value="אוטובוס">
+                        <label for="license3">אוטובוס</label>
                     </div>
                     <div class="checkbox-option">
-                        <input type="checkbox" id="interest4" name="interests" value="ניהול">
-                        <label for="interest4">ניהול</label>
+                        <input type="checkbox" id="license4" name="drivers_license" value="משאית">
+                        <label for="license4">משאית</label>
                     </div>
                 </div>
             </div>
 
-            <!-- Question 3 - Radio -->
+            <!-- Question 6 - Criminal Record -->
             <div class="form-group">
-                <label>מתי אתה זמין להתחיל? <span class="required">*</span></label>
+                <label>רקע פלילי <span class="required">*</span></label>
                 <div class="radio-group">
                     <div class="radio-option">
-                        <input type="radio" id="avail1" name="availability" value="מיידי" required>
-                        <label for="avail1">מיידי</label>
+                        <input type="radio" id="criminal1" name="criminal_record" value="אין רקע פלילי" required>
+                        <label for="criminal1">אין רקע פלילי</label>
                     </div>
                     <div class="radio-option">
-                        <input type="radio" id="avail2" name="availability" value="תוך שבועיים">
-                        <label for="avail2">תוך שבועיים</label>
+                        <input type="radio" id="criminal2" name="criminal_record" value="יש רקע פלילי">
+                        <label for="criminal2">יש רקע פלילי</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 7 - Physical Fitness -->
+            <div class="form-group">
+                <label>כושר גופני <span class="required">*</span></label>
+                <div class="radio-group">
+                    <div class="radio-option">
+                        <input type="radio" id="fitness1" name="physical_fitness" value="מצוין" required>
+                        <label for="fitness1">מצוין</label>
                     </div>
                     <div class="radio-option">
-                        <input type="radio" id="avail3" name="availability" value="תוך חודש">
-                        <label for="avail3">תוך חודש</label>
+                        <input type="radio" id="fitness2" name="physical_fitness" value="טוב">
+                        <label for="fitness2">טוב</label>
                     </div>
                     <div class="radio-option">
-                        <input type="radio" id="avail4" name="availability" value="תוך שלושה חודשים">
-                        <label for="avail4">תוך שלושה חודשים</label>
+                        <input type="radio" id="fitness3" name="physical_fitness" value="בינוני">
+                        <label for="fitness3">בינוני</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="fitness4" name="physical_fitness" value="נמוך">
+                        <label for="fitness4">נמוך</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 8 - Education -->
+            <div class="form-group">
+                <label>השכלה <span class="required">*</span></label>
+                <div class="radio-group">
+                    <div class="radio-option">
+                        <input type="radio" id="edu1" name="education" value="תיכונית" required>
+                        <label for="edu1">תיכונית</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="edu2" name="education" value="תואר ראשון">
+                        <label for="edu2">תואר ראשון</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="edu3" name="education" value="תואר שני ומעלה">
+                        <label for="edu3">תואר שני ומעלה</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 9 - Shift Availability -->
+            <div class="form-group">
+                <label>מוכנות למשמרות <span class="required">*</span></label>
+                <div class="checkbox-group">
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="shift1" name="shift_availability" value="בוקר" required>
+                        <label for="shift1">בוקר</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="shift2" name="shift_availability" value="צהריים">
+                        <label for="shift2">צהריים</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="shift3" name="shift_availability" value="לילה">
+                        <label for="shift3">לילה</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="shift4" name="shift_availability" value="סופי שבוע">
+                        <label for="shift4">סופי שבוע</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="shift5" name="shift_availability" value="חגים">
+                        <label for="shift5">חגים</label>
                     </div>
                 </div>
             </div>
 
             <!-- Text Area Questions -->
             <div class="form-group">
-                <label for="background">ספר לנו על הרקע המקצועי שלך <span class="required">*</span></label>
-                <textarea id="background" name="background" required></textarea>
+                <label for="motivation">למה אתה רוצה להצטרף למשטרה? <span class="required">*</span></label>
+                <textarea id="motivation" name="motivation" required></textarea>
             </div>
 
             <div class="form-group">
-                <label for="motivation">למה אתה מעוניין להצטרף אלינו?</label>
-                <textarea id="motivation" name="motivation"></textarea>
+                <label for="experience">ספר על ניסיון רלוונטי</label>
+                <textarea id="experience" name="experience"></textarea>
             </div>
 
             <div class="form-group">
-                <label for="additional">פרטים נוספים או שאלות</label>
+                <label for="additional">פרטים נוספים</label>
                 <textarea id="additional" name="additional"></textarea>
             </div>
 
@@ -341,10 +420,15 @@
             // Get form data
             const formData = new FormData(form);
             
-            // Collect all checkbox values
-            const checkboxes = document.querySelectorAll('input[name="interests"]:checked');
-            const interests = Array.from(checkboxes).map(cb => cb.value).join(', ');
-            formData.set('interests', interests || 'לא נבחר');
+            // Collect all checkbox values for drivers_license
+            const licenseCheckboxes = document.querySelectorAll('input[name="drivers_license"]:checked');
+            const licenses = Array.from(licenseCheckboxes).map(cb => cb.value).join(', ');
+            formData.set('drivers_license', licenses || 'לא נבחר');
+
+            // Collect all checkbox values for shift_availability
+            const shiftCheckboxes = document.querySelectorAll('input[name="shift_availability"]:checked');
+            const shifts = Array.from(shiftCheckboxes).map(cb => cb.value).join(', ');
+            formData.set('shift_availability', shifts || 'לא נבחר');
 
             try {
                 const response = await fetch('https://api.web3forms.com/submit', {
