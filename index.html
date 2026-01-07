@@ -255,10 +255,23 @@
                 </div>
             </div>
 
-            <!-- Question 2 - Military Service -->
+            <!-- Question 2 - Rovayi -->
             <div class="form-group">
-                <label for="military_service">רובאי <span class="required">*</span></label>
-                <input type="text" id="military_service" name="military_service" required>
+                <label>רובאי <span class="required">*</span></label>
+                <div class="radio-group">
+                    <div class="radio-option">
+                        <input type="radio" id="rovayi1" name="rovayi" value="03 ומעלה" required>
+                        <label for="rovayi1">03 ומעלה</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="rovayi2" name="rovayi" value="02">
+                        <label for="rovayi2">02</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="rovayi3" name="rovayi" value="לא יודע">
+                        <label for="rovayi3">לא יודע</label>
+                    </div>
+                </div>
             </div>
 
             <!-- Question 3 - Military Rank -->
@@ -380,11 +393,6 @@
             <div class="form-group">
                 <label for="motivation">למה אתה רוצה להצטרף לכיתת הכוננות? <span class="required">*</span></label>
                 <textarea id="motivation" name="motivation" required></textarea>
-            </div>
-
-            <div class="form-group">
-                <label for="experience">ספר על ניסיון רלוונטי</label>
-                <textarea id="experience" name="experience"></textarea>
             </div>
 
             <div class="form-group">
