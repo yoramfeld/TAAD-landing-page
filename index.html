@@ -372,7 +372,7 @@
                 <label>מוכנות למשמרות <span class="required">*</span></label>
                 <div class="checkbox-group">
                     <div class="checkbox-option">
-                        <input type="checkbox" id="shift1" name="shift_availability" value="בוקר" required>
+                        <input type="checkbox" id="shift1" name="shift_availability" value="בוקר">
                         <label for="shift1">בוקר</label>
                     </div>
                     <div class="checkbox-option">
@@ -428,6 +428,13 @@
         form.addEventListener('submit', async (e) => {
             e.preventDefault();
             
+            // Validate that at least one shift checkbox is checked
+            const shiftCheckboxes = document.querySelectorAll('input[name="shift_availability"]:checked');
+            if (shiftCheckboxes.length === 0) {
+                alert('אנא בחר לפחות משמרת אחת');
+                return;
+            }
+            
             // Disable submit button
             submitBtn.disabled = true;
             submitBtn.textContent = 'שולח...';
@@ -445,7 +452,6 @@
             formData.set('drivers_license', licenses || 'לא נבחר');
 
             // Collect all checkbox values for shift_availability
-            const shiftCheckboxes = document.querySelectorAll('input[name="shift_availability"]:checked');
             const shifts = Array.from(shiftCheckboxes).map(cb => cb.value).join(', ');
             formData.set('shift_availability', shifts || 'לא נבחר');
 
